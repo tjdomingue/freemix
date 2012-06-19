@@ -226,7 +226,8 @@ class Gui:
         vid_button_box.pack_start(load_vid_box, True, True, 0)
         vid_table_box.pack_start(vid_button_box, True, True, 0)
 
-        load_vid_box.pack_start(empty_label, True, True, 0)
+        #this throws a gtk error, so leaving out for now:
+        #load_vid_box.pack_start(empty_label, True, True, 0)
 
         self.load_vid_button = gtk.Button("  load video  ")
         self.load_vid_button.connect("clicked", self.load_vid_clicked, None)
